@@ -187,3 +187,126 @@ Linux is everywhere — from your desktop to your robot, from your terminal to t
 
 ### 1.2.4 Getting familiar with the terminal and file system
 
+For many Windows and macOS users, the terminal can feel intimidating at first. It’s just a black screen with blinking text — no icons, no buttons, no safety nets. But here’s the secret: the terminal is where real geeks thrive. It’s fast, powerful, and gives you direct control over your computer. Once you learn how to use it, you’ll never want to go back.
+
+The terminal lets you talk to your computer using text commands. You can navigate folders, create files, install software, and even compile your C++ programs — all from the keyboard. It’s like having superpowers that most users never unlock.
+
+The file system is how your computer organizes everything: folders, files, programs, and settings. In Linux (Ubuntu), the file system starts at the root / and branches out into directories like /home, /etc, and /usr. You’ll learn how to move through this structure using terminal commands.
+
+Here’s a list of essential terminal commands every geek kid should know:
+
+#### Navigation
+
+* `pwd` — Show your current directory
+
+* `ls` — List files and folders
+
+* `cd foldername` — Change directory
+
+* `cd ..` — Go up one level
+
+* `cd /` — Go to the root directory
+
+* `cd ~` — Go to your home directory
+
+#### File and Folder Management
+
+* `mkdir foldername` — Create a new folder
+
+* `touch filename.txt` — Create an empty file
+
+* `cp source.txt destination.txt` — Copy a file
+
+* `mv oldname.txt newname.txt` — Rename or move a file
+
+* `rm filename.txt` — Delete a file
+
+* `rm -r foldername` — Delete a folder and its contents
+
+* `tree` — Show folder structure (install with `sudo apt install tree`)
+
+#### Viewing and Editing Files
+
+* `cat filename.txt` — View file contents
+
+* `less filename.txt` — Scroll through file contents
+
+* `nano filename.txt` — Edit a file in the terminal
+
+* `gedit filename.txt` — Edit a file with a graphical editor
+
+#### System Info and Permissions
+
+* `whoami` — Show your username
+
+* `id` — Show user and group info
+
+* `chmod +x filename.sh` — Make a file executable
+
+* `sudo command` — Run a command as superuser
+
+* `top` — View running processes
+
+* `htop` — Advanced process viewer (install with sudo apt install htop)
+
+* `df -h` — Show disk usage
+
+* `free -h` — Show memory usage
+
+* `uname -a` — Show system info
+
+* `uptime` — Show how long the system has been running
+
+* `hostname` — Show system hostname
+
+#### Package Management (Ubuntu)
+
+* `sudo apt update` — Refresh package list
+
+* `sudo apt upgrade` — Install updates
+
+* `sudo apt install packagename` — Install a package
+
+* `sudo apt remove packagename` — Remove a package
+
+* `sudo apt purge packagename` — completely removes a package from your system along with its configuration files
+
+* `apt list --installed` — List installed packages
+
+* `dpkg -l` — Another way to list packages
+
+#### Search and Help
+
+* `man command` — View manual for a command
+
+* `command --help` — Show help options
+
+* `grep keyword filename.txt` — Search for text inside files
+
+* `find . -name "filename"` — Search for files by name
+
+* `which command` — Show the path of a command
+
+* `locate filename` — Quickly find files (install with `sudo apt install mlocate`)
+
+* `history` — Show command history
+
+* `history -c` — clear command history
+
+#### Useful Shortcuts
+
+* **Tab** — Auto-complete file and folder names
+
+* **Ctrl+C** — Cancel a running command
+
+* **Ctrl+L** — Clear the terminal screen
+
+* **Up Arrow** — Repeat previous command
+
+* **Ctrl+Shift+T** — Open a new terminal tab
+
+* **Ctrl+D** — Log out or close terminal
+
+Once you master these commands, you’ll be able to navigate, manage, and troubleshoot your system like a real geek. These tools are used everywhere — in Ubuntu, in embedded boards, inside Windows 11 (WSL), and in cloud terminals. The terminal is your universal passport to Linux-powered environments.
+
+In the next sections, you’ll use these commands to install build tools, compile C++ code, and manage your projects. So take your time here — this is where your geek powers begin.
