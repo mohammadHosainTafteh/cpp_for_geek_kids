@@ -201,49 +201,272 @@ This is the safest way to explore Ubuntu. You can install apps, write code, and 
 
 This setup lets you choose between Ubuntu and your existing OS every time you start your computer. It’s perfect for geek kids who want a dedicated Ubuntu system for coding, while keeping Windows or macOS for school or family use.
 
-* Use tools like Rufus or BalenaEtcher to create a bootable USB.
+#### Option 2: Dual Boot with Windows or macOS
 
-* Shrink your existing partition and install Ubuntu alongside your current OS.
+This setup lets you choose between Ubuntu and your existing OS every time you start your computer. It’s perfect for geek kids who want a dedicated Ubuntu system for coding, while keeping Windows or macOS for school or family use.
 
-* Choose Ubuntu from the boot menu when you want to enter geek mode.
+##### Dual Boot Ubuntu: Step-by-Step Guide for Beginners
 
-~~//TODO~~
+Dual booting means installing Ubuntu alongside your current operating system (like Windows or macOS), so you can choose which one to use each time you start your computer. It’s powerful — but risky if done carelessly. Follow these steps exactly, and **always back up your data first.**
 
-#### Option 2: USB Live Boot
+##### Step 1: Understand What Dual Booting Does
 
-Want to try Ubuntu without installing it? Boot it from a USB stick!
+* Your hard drive will be split into two sections (called partitions).
 
-* Create a live USB and boot into Ubuntu without touching your hard drive.
+* One partition keeps your current OS (Windows/macOS), the other holds Ubuntu.
 
-* Great for testing, learning, or using on borrowed computers.
+* At startup, you’ll choose which OS to boot using a menu called GRUB.
 
-* You can even make it persistent so it remembers your changes.
+⚠️ **WARNING:** If you accidentally delete or overwrite your current OS partition, you could lose all your files. That’s why the next step is critical.
 
-~~//TODO~~
+##### Step 2: Back Up Everything
+
+* Save important files to an external hard drive or cloud storage (Google Drive, Dropbox, etc.).
+
+* Don’t skip this — even pros make mistakes.
+
+##### Step 3: Download Ubuntu
+
+* Go to [ubuntu.com](https://ubuntu.com/download) and download the latest Ubuntu Desktop ISO file.
+
+* Choose the LTS (Long Term Support) version for stability.
+
+##### Step 4: Create a Bootable USB
+
+* Use **Rufus** (Windows) or **BalenaEtcher** (macOS/Linux) to write the ISO to a USB stick.
+
+* Plug in your USB and launch the tool.
+
+* Select the Ubuntu ISO and your USB drive, then click “Start.”
+
+##### Step 5: Shrink Your Existing Partition
+
+* On Windows: Open Disk Management → Right-click your main drive → “Shrink Volume.”
+
+* On macOS: Use Disk Utility → Select your drive → Partition → Add a new partition.
+
+* Leave at least 20 GB free for Ubuntu.
+
+⚠️ **WARNING: Do not delete any partitions. Only shrink.**
+
+##### Step 6: Boot from USB
+
+* Restart your computer and enter the boot menu:
+
+    * Windows: Usually F12, Esc, or Del
+
+    * macOS: Hold Option key
+
+* Select your USB drive to boot into Ubuntu.
+
+##### Step 7: Start Ubuntu Installation
+
+* Click “Install Ubuntu.”
+
+* Choose **“Install Ubuntu alongside Windows/macOS”** — this is the safest option.
+
+* If you don’t see this option, STOP and ask for help. Manual partitioning is risky.
+
+##### Step 8: Follow the Installer Carefully
+
+* Select your language, keyboard layout, and time zone.
+
+* When asked about partitions, **double-check** that your existing OS is not being erased.
+
+* Confirm that Ubuntu is being installed in the new space you created.
+
+##### Step 9: Finish Installation and Reboot
+
+* Let Ubuntu install (takes 10–30 minutes).
+
+* When done, **remove the USB** and restart your computer.
+
+##### Step 10: Choose Your OS at Startup
+
+* You’ll see a menu called GRUB.
+
+* Use arrow keys to select Ubuntu or Windows/macOS.
+
+* Press Enter to boot.
+
+##### You’re Done!
+
+You now have a dual-boot system. Ubuntu is ready for coding, and your original OS is still intact.
+
+
+
 
 #### Option 3: Virtual Machine (VM)
 
-Run Ubuntu inside Windows or macOS using software like VirtualBox or VMware.
+This is a beginner-friendly way to run Ubuntu inside your current operating system without changing anything on your hard drive. You’ll use a virtual machine app like VirtualBox or VMware to create a "computer inside your computer" — perfect for safe experimentation.
 
-* Ideal for beginners who want to experiment safely.
+##### What You Need
 
-* You can pause, snapshot, and restore your Ubuntu environment anytime.
+* A computer running Windows or macOS
 
-* Perfect for learning terminal commands and compiling code.
+* At least 8 GB RAM and 20 GB free disk space
 
-~~//TODO~~
+* Ubuntu ISO file (download from [ubuntu.com](https://ubuntu.com/download))
+
+* VirtualBox (free) or VMware Workstation Player (free for personal use)
+
+##### Step-by-Step Guide
+
+* Download and Install VirtualBox
+
+    * Go to [virtualbox.org](https://www.virtualbox.org/) and download the installer for your OS
+
+    * Install it like any other app
+
+* Download Ubuntu ISO
+
+    * Visit [ubuntu.com/download](https://ubuntu.com/download)
+
+    * Choose the latest LTS version for stability
+
+* Create a New Virtual Machine
+
+    * Open VirtualBox → Click "New"
+
+    * Name it "Ubuntu VM" and select "Linux" as the type, "Ubuntu (64-bit)" as the version
+
+    * Allocate memory (at least 4096 MB recommended)
+
+    * Create a virtual hard disk (20 GB or more)
+
+* Attach the Ubuntu ISO
+
+    * Go to Settings → Storage → Click the empty disk icon → Choose the Ubuntu ISO file
+
+* Start the VM and Install Ubuntu
+
+    * Click "Start" to boot the VM
+
+    * Follow the Ubuntu installer steps (language, keyboard, time zone, etc.)
+
+    * Choose "Erase disk and install Ubuntu" — this only affects the virtual disk, not your real computer
+
+* Finish Installation and Reboot
+
+    * Let Ubuntu install (takes 10–30 minutes)
+
+    * Reboot the VM when prompted
+
+* Explore Ubuntu Safely
+
+    * You now have a full Ubuntu desktop inside a window
+
+    * You can install apps like nano, g++, and VS Code
+
+    * Try writing and compiling C++ code, using the terminal, and exploring Linux commands
+
+##### What You Can Learn
+
+* How Ubuntu works without installing it on your real computer
+
+* How to use the terminal and install packages
+
+* How to write and run C++ code
+
+* How to experiment with Linux safely
+
+##### When You’re Done
+
+* Close the VM window to pause Ubuntu
+
+* You can resume anytime, or take snapshots to save your progress
+
+This is one of the safest and most flexible ways to learn Ubuntu. You get all the power of Linux, with none of the risk.
 
 #### Option 4: Windows Subsystem for Linux (WSL)
 
-If you're using Windows 11, you can install Ubuntu directly inside Windows — no dual boot or VM required.
+This is a suggested option for beginners who use Windows 10 or 11 and want to try Ubuntu without installing anything or using a virtual machine. WSL lets you run Ubuntu inside your Windows system — like a built-in Linux terminal.
 
-* Use the Microsoft Store to install Ubuntu via WSL.
+##### What You Need
 
-* Run Linux commands and compile C++ code from your Windows terminal.
+* A computer running Windows 10 or 11
 
-* Great for lightweight development and learning Unix tools.
+* Internet connection
 
-~~//TODO~~
+* Administrator access to install features
+
+##### Step-by-Step Guide
+
+* **Enable WSL Feature**
+
+    * Open PowerShell as Administrator
+
+    * Run: `wsl --install`
+
+    * This installs WSL and sets up Ubuntu automatically (on Windows 11)
+
+    * On Windows 10, you may need to run:
+        ```
+        dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+        dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+        wsl --set-default-version 2
+        ```
+* **Install Ubuntu from Microsoft Store**
+
+    * Open Microsoft Store
+
+    * Search for "Ubuntu"
+
+    * Click "Get" to install your preferred version (e.g., Ubuntu 22.04 LTS)
+
+* **Launch Ubuntu**
+
+    * After installation, open Ubuntu from the Start Menu
+
+    * The first time, it will set up your Linux environment
+
+    * Create a username and password when prompted
+
+* **Start Using Ubuntu**
+
+    * You now have a full Linux terminal inside Windows
+
+    * Try commands like:
+
+        * `ls` → list files
+
+        * `sudo apt update` → refresh package list
+
+        * `sudo apt install nano g++` → install tools for C++ development
+
+* **Install VS Code (Optional)**
+
+    * Download VS Code from [code.visualstudio.com](https://code.visualstudio.com/)
+
+    * Install the "Remote - WSL" extension to edit Linux files directly from VS Code
+
+##### What You Can Learn
+
+* How to use Linux commands and tools
+
+* How to compile and run C++ code in a real Linux environment
+
+* How to integrate Linux with Windows workflows
+
+##### Why Beginners Love WSL
+
+* No need to dual boot or use a USB
+
+* Safe and easy to install
+
+* Great for learning Linux and C++ side-by-side with Windows
+
+This is one of the easiest ways to start using Ubuntu if you're already on Windows. You get the power of Linux with the comfort of your existing system.
+
+
+
+
+
+
+
+
+
+
 
 #### Option 5: Embedded Boards and IoT Devices
 
@@ -434,261 +657,6 @@ In the next sections, you’ll use these commands to install build tools, compil
 
 
 
-Option 2: Dual Boot with Windows or macOS
-
-This setup lets you choose between Ubuntu and your existing OS every time you start your computer. It’s perfect for geek kids who want a dedicated Ubuntu system for coding, while keeping Windows or macOS for school or family use.
-
-🛡️ Dual Boot Ubuntu: Step-by-Step Guide for Beginners
-
-Dual booting means installing Ubuntu alongside your current operating system (like Windows or macOS), so you can choose which one to use each time you start your computer. It’s powerful — but risky if done carelessly. Follow these steps exactly, and always back up your data first.
-
-🔍 Step 1: Understand What Dual Booting Does
-
-Your hard drive will be split into two sections (called partitions).
-
-One partition keeps your current OS (Windows/macOS), the other holds Ubuntu.
-
-At startup, you’ll choose which OS to boot using a menu called GRUB.
-
-⚠️ WARNING: If you accidentally delete or overwrite your current OS partition, you could lose all your files. That’s why the next step is critical.
-
-💾 Step 2: Back Up Everything
-
-Save important files to an external hard drive or cloud storage (Google Drive, Dropbox, etc.).
-
-Don’t skip this — even pros make mistakes.
-
-📥 Step 3: Download Ubuntu
-
-Go to ubuntu.com and download the latest Ubuntu Desktop ISO file.
-
-Choose the LTS (Long Term Support) version for stability.
-
-🔧 Step 4: Create a Bootable USB
-
-Use Rufus (Windows) or BalenaEtcher (macOS/Linux) to write the ISO to a USB stick.
-
-Plug in your USB and launch the tool.
-
-Select the Ubuntu ISO and your USB drive, then click “Start.”
-
-🧹 Step 5: Shrink Your Existing Partition
-
-On Windows: Open Disk Management → Right-click your main drive → “Shrink Volume.”
-
-On macOS: Use Disk Utility → Select your drive → Partition → Add a new partition.
-
-Leave at least 20 GB free for Ubuntu.
-
-⚠️ WARNING: Do not delete any partitions. Only shrink.
-
-🚀 Step 6: Boot from USB
-
-Restart your computer and enter the boot menu:
-
-Windows: Usually F12, Esc, or Del
-
-macOS: Hold Option key
-
-Select your USB drive to boot into Ubuntu.
-
-🧙 Step 7: Start Ubuntu Installation
-
-Click “Install Ubuntu.”
-
-Choose “Install Ubuntu alongside Windows/macOS” — this is the safest option.
-
-If you don’t see this option, STOP and ask for help. Manual partitioning is risky.
-
-🧭 Step 8: Follow the Installer Carefully
-
-Select your language, keyboard layout, and time zone.
-
-When asked about partitions, double-check that your existing OS is not being erased.
-
-Confirm that Ubuntu is being installed in the new space you created.
-
-🔄 Step 9: Finish Installation and Reboot
-
-Let Ubuntu install (takes 10–30 minutes).
-
-When done, remove the USB and restart your computer.
-
-🧭 Step 10: Choose Your OS at Startup
-
-You’ll see a menu called GRUB.
-
-Use arrow keys to select Ubuntu or Windows/macOS.
-
-Press Enter to boot.
-
-✅ You’re Done!
-
-You now have a dual-boot system. Ubuntu is ready for coding, and your original OS is still intact.
-
-
-
-Option 3: Virtual Machine (VM)
-
-This is a beginner-friendly way to run Ubuntu inside your current operating system without changing anything on your hard drive. You’ll use a virtual machine app like VirtualBox or VMware to create a "computer inside your computer" — perfect for safe experimentation.
-
-🧰 What You Need
-
-A computer running Windows or macOS
-
-At least 8 GB RAM and 20 GB free disk space
-
-Ubuntu ISO file (download from ubuntu.com)
-
-VirtualBox (free) or VMware Workstation Player (free for personal use)
-
-🪄 Step-by-Step Guide
-
-Download and Install VirtualBox
-
-Go to virtualbox.org and download the installer for your OS
-
-Install it like any other app
-
-Download Ubuntu ISO
-
-Visit ubuntu.com/download
-
-Choose the latest LTS version for stability
-
-Create a New Virtual Machine
-
-Open VirtualBox → Click "New"
-
-Name it "Ubuntu VM" and select "Linux" as the type, "Ubuntu (64-bit)" as the version
-
-Allocate memory (at least 4096 MB recommended)
-
-Create a virtual hard disk (20 GB or more)
-
-Attach the Ubuntu ISO
-
-Go to Settings → Storage → Click the empty disk icon → Choose the Ubuntu ISO file
-
-Start the VM and Install Ubuntu
-
-Click "Start" to boot the VM
-
-Follow the Ubuntu installer steps (language, keyboard, time zone, etc.)
-
-Choose "Erase disk and install Ubuntu" — this only affects the virtual disk, not your real computer
-
-Finish Installation and Reboot
-
-Let Ubuntu install (takes 10–30 minutes)
-
-Reboot the VM when prompted
-
-Explore Ubuntu Safely
-
-You now have a full Ubuntu desktop inside a window
-
-You can install apps like nano, g++, and VS Code
-
-Try writing and compiling C++ code, using the terminal, and exploring Linux commands
-
-🧠 What You Can Learn
-
-How Ubuntu works without installing it on your real computer
-
-How to use the terminal and install packages
-
-How to write and run C++ code
-
-How to experiment with Linux safely
-
-🧼 When You’re Done
-
-Close the VM window to pause Ubuntu
-
-You can resume anytime, or take snapshots to save your progress
-
-This is one of the safest and most flexible ways to learn Ubuntu. You get all the power of Linux, with none of the risk.
-
-Option 4: Windows Subsystem for Linux (WSL)
-
-This is a suggested option for beginners who use Windows 10 or 11 and want to try Ubuntu without installing anything or using a virtual machine. WSL lets you run Ubuntu inside your Windows system — like a built-in Linux terminal.
-
-🧰 What You Need
-
-A computer running Windows 10 or 11
-
-Internet connection
-
-Administrator access to install features
-
-🪄 Step-by-Step Guide
-
-Enable WSL Feature
-
-Open PowerShell as Administrator
-
-Run: wsl --install
-
-This installs WSL and sets up Ubuntu automatically (on Windows 11)
-
-On Windows 10, you may need to run:
-
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-wsl --set-default-version 2
-
-Install Ubuntu from Microsoft Store
-
-Open Microsoft Store
-
-Search for "Ubuntu"
-
-Click "Get" to install your preferred version (e.g., Ubuntu 22.04 LTS)
-
-Launch Ubuntu
-
-After installation, open Ubuntu from the Start Menu
-
-The first time, it will set up your Linux environment
-
-Create a username and password when prompted
-
-Start Using Ubuntu
-
-You now have a full Linux terminal inside Windows
-
-Try commands like:
-
-ls → list files
-
-sudo apt update → refresh package list
-
-sudo apt install nano g++ → install tools for C++ development
-
-Install VS Code (Optional)
-
-Download VS Code from code.visualstudio.com
-
-Install the "Remote - WSL" extension to edit Linux files directly from VS Code
-
-🧠 What You Can Learn
-
-How to use Linux commands and tools
-
-How to compile and run C++ code in a real Linux environment
-
-How to integrate Linux with Windows workflows
-
-✅ Why Beginners Love WSL
-
-No need to dual boot or use a USB
-
-Safe and easy to install
-
-Great for learning Linux and C++ side-by-side with Windows
-
-This is one of the easiest ways to start using Ubuntu if you're already on Windows. You get the power of Linux with the comfort of your existing system.
 
 
 
