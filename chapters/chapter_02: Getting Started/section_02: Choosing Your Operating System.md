@@ -599,7 +599,7 @@ For many Windows and macOS users, the terminal can feel intimidating at first. I
 
 The terminal lets you talk to your computer using text commands. You can navigate folders, create files, install software, and even compile your C++ programs — all from the keyboard. It’s like having superpowers that most users never unlock.
 
-The file system is how your computer organizes everything: folders, files, programs, and settings. In Linux (Ubuntu), the file system starts at the root / and branches out into directories like /home, /etc, and /usr. You’ll learn how to move through this structure using terminal commands.
+The file system is how your computer organizes everything: folders, files, programs, and settings. In Linux (Ubuntu), the file system starts at the root `/` and branches out into directories like `/home`, `/etc`, and `/usr`. You’ll learn how to move through this structure using terminal commands.
 
 Here’s a list of essential terminal commands every geek kid should know:
 
