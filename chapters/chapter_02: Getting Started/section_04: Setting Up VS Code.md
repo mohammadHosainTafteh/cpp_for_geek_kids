@@ -1,36 +1,36 @@
-2.4 Setting Up VS Code
+## 2.4 Setting Up VS Code
 
-2.4.1 Exploring Code Editors: From CLI to Full IDE
+### 2.4.1 Exploring Code Editors: From CLI to Full IDE
 
 Before diving into VS Code, it's helpful to understand the landscape of code editors. This section introduces different types of editors so geek kids can appreciate the flexibility of coding environments.
 
-CLI Editors (Terminal-based):
+#### CLI Editors (Terminal-based):
 
-nano: A simple, beginner-friendly editor that works directly in the terminal.
+* `nano`: A simple, beginner-friendly editor that works directly in the terminal.
 
-micro: A modern CLI editor with intuitive shortcuts and syntax highlighting.
+* `micro`: A modern CLI editor with intuitive shortcuts and syntax highlighting.
 
-vim: A powerful editor with a steep learning curve, ideal for advanced users.
+* `vim`: A powerful editor with a steep learning curve, ideal for advanced users.
 
-newvim: A modern fork of Vim with better defaults, built-in plugin manager, and smoother onboarding for beginners.
+* `newvim`: A modern fork of Vim with better defaults, built-in plugin manager, and smoother onboarding for beginners.
 
-GUI Simple Editors:
+#### GUI Simple Editors:
 
-gedit: Lightweight and pre-installed on Ubuntu, great for quick edits.
+* `gedit`: Lightweight and pre-installed on Ubuntu, great for quick edits.
 
-Kate: A KDE-based editor with tabs, syntax highlighting, and session management.
+* `Kate`: A KDE-based editor with tabs, syntax highlighting, and session management.
 
-Full IDEs:
+#### Full IDEs:
 
-VS Code: Lightweight, extensible, and cross-platform. Ideal for beginners and pros alike.
+* VS Code: Lightweight, extensible, and cross-platform. Ideal for beginners and pros alike.
 
-Qt Creator: Excellent for GUI-based C++ development.
+* Qt Creator: Excellent for GUI-based C++ development.
 
-CLion: A commercial IDE with deep C++ support and smart code analysis.
+* CLion: A commercial IDE with deep C++ support and smart code analysis.
 
-Geek Tip: Try editing the same file in nano, gedit, and VS Code to feel the difference in workflow.
+**Geek Tip**: Try editing the same file in `nano`, `gedit`, and VS Code to feel the difference in workflow.
 
-2.4.2 Why VS Code Is Perfect for Geek Kids
+### 2.4.2 Why VS Code Is Perfect for Geek Kids
 
 VS Code is the recommended editor for this book because it balances simplicity with power. Here's why it's a great choice:
 
