@@ -84,75 +84,75 @@ To turn VS Code into a C++ development powerhouse, install the right extensions 
 
 Now that VS Code is installed and ready, let’s take a quick tour of its interface and learn some handy shortcuts to boost your coding speed
 
-Main Interface Overview:
+#### Main Interface Overview:
 
 VS Code is made of several panels and windows that work together to help you write, organize, and run your code. Here's a beginner-friendly tour:
 
-Activity Bar (Far Left Column):
+**Activity Bar** (Far Left Column):
 
-This vertical bar lets you switch between different views like Explorer, Search, Source Control, Extensions, and more.
+* This vertical bar lets you switch between different views like Explorer, Search, Source Control, Extensions, and more.
 
-You can click each icon to open its related panel.
+* You can click each icon to open its related panel.
 
-Explorer (📁):
+**Explorer** (📁):
 
-Shows your files and folders.
+* Shows your files and folders.
 
-You can open a folder to start working on a project.
+* You can open a folder to start working on a project.
 
-Right-click to create new files or folders.
+* Right-click to create new files or folders.
 
-Editor Area (Center):
+**Editor Area** (Center):
 
-This is where you write and edit your code.
+* This is where you write and edit your code.
 
-You can open multiple files in tabs, just like a web browser.
+* You can open multiple files in tabs, just like a web browser.
 
-Side Bar (Left Panel):
+**Side Bar** (Left Panel):
 
-Displays the contents of the selected Activity Bar icon (like Explorer or Extensions).
+* Displays the contents of the selected Activity Bar icon (like Explorer or Extensions).
 
-Status Bar (Bottom Strip):
+**Status Bar** (Bottom Strip):
 
-Shows information like your current file type, Git branch, and errors or warnings.
+* Shows information like your current file type, Git branch, and errors or warnings.
 
-You can click parts of it to change settings or view details.
+* You can click parts of it to change settings or view details.
 
-Terminal (🖥️):
+**Terminal** (🖥️):
 
-Built-in command line at the bottom of the window.
+* Built-in command line at the bottom of the window.
 
-You can run commands like g++ hello.cpp or ls without leaving VS Code.
+* You can run commands like `g++ hello.cpp` or `ls` without leaving VS Code.
 
-Extensions (🔌):
+**Extensions** (🔌):
 
-Lets you add new features and language support.
+* Lets you add new features and language support.
 
-You can search for "C++" and install helpful tools.
+* You can search for "C++" and install helpful tools.
 
-Source Control (🔀):
+**Source Control** (🔀):
 
-Integrates with Git to track changes in your code.
+* Integrates with Git to track changes in your code.
 
-You can commit, push, and pull code if you're using GitHub.
+* You can commit, push, and pull code if you're using GitHub.
 
-Command Palette:
+**Command Palette**:
 
-Press Ctrl + Shift + P to open this powerful search bar.
+* Press `Ctrl + Shift + P` to open this powerful search bar.
 
-You can type commands like "Change Theme" or "Install Extension".
+* You can type commands like "Change Theme" or "Install Extension".
 
-Settings Panel:
+**Settings Panel**:
 
-Press Ctrl + , to open settings.
+* Press `Ctrl + ,` to open settings.
 
-You can customize font size, theme, tab behavior, and more.
+* You can customize font size, theme, tab behavior, and more.
 
-Geek Tip: You can resize panels by dragging their edges, and rearrange tabs to organize your workspace.
+**Geek Tip**: You can resize panels by dragging their edges, and rearrange tabs to organize your workspace.
 
 
 
-Useful Shortcuts for Geek KidCtrl + Shift + P: Open Command Palette — your gateway to all features.
+#### Useful Shortcuts for Geek KidCtrl + Shift + P: Open Command Palette — your gateway to all features.
 
 Ctrl + B: Toggle the sidebar.
 
