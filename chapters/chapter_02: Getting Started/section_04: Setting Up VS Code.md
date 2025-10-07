@@ -152,150 +152,152 @@ VS Code is made of several panels and windows that work together to help you wri
 
 
 
-#### Useful Shortcuts for Geek KidCtrl + Shift + P: Open Command Palette — your gateway to all features.
+#### Useful Shortcuts for Geek Kids
 
-Ctrl + B: Toggle the sidebar.
+* `Ctrl + Shift + P`: Open Command Palette — your gateway to all features.
 
-Ctrl + ~: Open or close the terminal.
+* `Ctrl + B`: Toggle the sidebar.
 
-Ctrl + /: Comment or uncomment a line.
+* `Ctrl + ~`: Open or close the terminal.
 
-Ctrl + Space: Trigger IntelliSense (auto-complete).
+* `Ctrl + /`: Comment or uncomment a line.
 
-Ctrl + Shift + F: Search across all files.
+* `Ctrl + Space`: Trigger IntelliSense (auto-complete).
 
-Ctrl + Tab: Switch between open files.
+* `Ctrl + Shift + F`: Search across all files.
 
-Ctrl + Shift + E: Focus on Explorer view.
+* `Ctrl + Tab`: Switch between open files.
 
-Ctrl + Shift + X: Focus on Extensions view.
+* `Ctrl + Shift + E`: Focus on Explorer view.
 
-Ctrl + Shift + G: Focus on Source Control view.
+* `Ctrl + Shift + X`: Focus on Extensions view.
 
-Geek Tip: Use the Command Palette to change themes, run tasks, or install extensions — it’s like magic for coder.
+* `Ctrl + Shift + G`: Focus on Source Control view.
+
+**Geek Tip**: Use the Command Palette to change themes, run tasks, or install extensions — it’s like magic for coder.
 
 
 
-2.4.6 GitHub Copilot: Your AI Coding Assistant
+### 2.4.6 GitHub Copilot: Your AI Coding Assistant
 
 GitHub Copilot is an AI-powered coding assistant that helps you write code faster and smarter. It works right inside VS Code, suggesting entire lines or blocks of code as you type.
 
-🧠 What Is GitHub Copilot?
+#### What Is GitHub Copilot?
 
-GitHub Copilot is trained on billions of lines of code and can:
+* GitHub Copilot is trained on billions of lines of code and can:
 
-Suggest code completions based on your comments and context
+* Suggest code completions based on your comments and context
 
-Help you write functions, loops, and even entire programs
+* Help you write functions, loops, and even entire programs
 
-Offer alternative solutions or fix bugs
+* Offer alternative solutions or fix bugs
 
-Translate natural language into working code
-
-
-
-⚙️ How to Install GitHub Copilot in VS Code
-
-Open VS Code and go to the Extensions panel (Ctrl + Shift + X).
-
-Search for GitHub Copilot.
-
-Click Install.
-
-Sign in with your GitHub account when prompted. If you don’t have a GitHub account yet, don’t worry — we’ll learn all about GitHub in the next chapters. You can activate GitHub Copilot later once you're ready.
-
-Accept permissions and restart VS Code if needed.
+* Translate natural language into working code
 
 
 
-🚀 Benefits of Using GitHub Copilot
+#### How to Install GitHub Copilot in VS Code
 
-Helps you learn by example — see how code is written
+* Open VS Code and go to the Extensions panel (Ctrl + Shift + X).
 
-Speeds up repetitive tasks like loops and conditionals
+* Search for GitHub Copilot.
 
-Encourages exploration and creativity
+* Click Install.
 
-Reduces frustration when you're stuck
+* Sign in with your GitHub account when prompted. If you don’t have a GitHub account yet, don’t worry — we’ll learn all about GitHub in the next chapters. You can activate GitHub Copilot later once you're ready.
 
-Saves time while coding — Copilot can write boilerplate code instantly.
-
-Explains code written by other programmers in a simple and fast way — great for understanding unfamiliar code.
-
-Copilot offers around 2,000 free completions before requiring a subscription. This means you can try it out and generate short code suggestions without paying — perfect for beginners exploring its capabilities.
-
-⚠️ Limitations to Keep in Mind
-
-Copilot doesn’t always give correct or optimized code
-
-It may suggest insecure or outdated patterns
-
-You still need to understand and review the code it writes
-
-GitHub Copilot is a paid service — students may get free access, but otherwise it requires a subscription.
-
-Copilot has a limit characters per completion, so it may not generate long code blocks all at once.
-
-The Copilot agent may pause or slow down if you make too many requests quickly — just wait a moment and try again.
+* Accept permissions and restart VS Code if needed.
 
 
 
-Geek Tip: Always test and tweak Copilot’s suggestions. You’re the pilot — it’s just your copilot.
+#### Benefits of Using GitHub Copilot
 
-⌨️ Useful Shortcuts
+* Helps you learn by example — see how code is written
 
-Ctrl + Enter: Ask Copilot for a suggestion manually
+* Speeds up repetitive tasks like loops and conditionals
 
-Ctrl + I : start inline chat.
+* Encourages exploration and creativity
 
-Tab: Accept Copilot’s inline suggestion
+* Reduces frustration when you're stuck
 
-Esc: Dismiss a suggestion
+* Saves time while coding — Copilot can write boilerplate code instantly.
 
-Alt + \ : Requests a new suggestion at cursor
+* Explains code written by other programmers in a simple and fast way — great for understanding unfamiliar code.
 
-Alt + ]: Show next suggestion
+* Copilot offers around 2,000 free completions before requiring a subscription. This means you can try it out and generate short code suggestions without paying — perfect for beginners exploring its capabilities.
 
-Alt + [: Show previous suggestion
+#### Limitations to Keep in Mind
 
-Ctrl + Alt + I : Open Chat view (side panel)
+* Copilot doesn’t always give correct or optimized code
 
-Ctrl + Shift + Alt + I: Switch to agent mode (chat)
+* It may suggest insecure or outdated patterns
 
+* You still need to understand and review the code it writes
 
+* GitHub Copilot is a paid service — students may get free access, but otherwise it requires a subscription.
 
-Geek Tip: Use comments like // create a function to reverse a string and watch Copilot do the magic.
+* Copilot has a limit characters per completion, so it may not generate long code blocks all at once.
 
-Geek Tip: GitHub Copilot Chat has three powerful modes: Ask, Edit, and Agent.
-
-Ask: Use this mode to ask questions about your code, like "What does this function do?"
-
-Edit: Use this mode to request changes, such as "Rename this variable" or "Add comments."
-
-Agent: A special mode that lets Copilot act more like an assistant — it can follow instructions, perform tasks, and interact with your code more deeply.
+* The Copilot agent may pause or slow down if you make too many requests quickly — just wait a moment and try again.
 
 
 
-⚠️ Tip: Don’t mix up the modes — each one is designed for a specific type of help. Use them wisely to get the best results!
+**Geek Tip**: Always test and tweak Copilot’s suggestions. You’re the pilot — it’s just your copilot.
+
+#### Useful Shortcuts
+
+* `Ctrl + Enter`: Ask Copilot for a suggestion manually
+
+* `Ctrl + I` : start inline chat.
+
+* `Tab`: Accept Copilot’s inline suggestion
+
+* `Esc`: Dismiss a suggestion
+
+* `Alt + \`: Requests a new suggestion at cursor
+
+* `Alt + ]`: Show next suggestion
+
+* `Alt + [`: Show previous suggestion
+
+* `Ctrl + Alt + I` : Open Chat view (side panel)
+
+* `Ctrl + Shift + Alt + I`: Switch to agent mode (chat)
 
 
+
+**Geek Tip**: Use comments like `// create a function to reverse a string` and watch Copilot do the magic.
+
+**Geek Tip**: GitHub Copilot Chat has three powerful modes: Ask, Edit, and Agent.
+
+* **Ask**: Use this mode to ask questions about your code, like "What does this function do?"
+
+* **Edit**: Use this mode to request changes, such as "Rename this variable" or "Add comments."
+
+* **Agent**: A special mode that lets Copilot act more like an assistant — it can follow instructions, perform tasks, and interact with your code more deeply.
+
+
+
+**Geek Tip**: Don’t mix up the modes — each one is designed for a specific type of help. Use them wisely to get the best results!
 
 
 
 
 
-2.4.7 Summary and Next Steps
+
+
+### 2.4.7 Summary and Next Steps
 
 You’ve now transformed VS Code into your personal C++ coding lab. Here’s what you’ve accomplished:
 
-✅ Explored different types of editors
+* Explored different types of editors
 
-✅ Installed VS Code on Ubuntu
+* Installed VS Code on Ubuntu
 
-✅ Verified installation
+* Verified installation
 
-✅ Added C++ extensions
+* Added C++ extensions
 
-✅ Learned the layout and shortcuts
+* Learned the layout and shortcuts
 
-➡️ Next Chapter: Writing Your First Real C++ Program*am
+Next section: Writing Your First Real C++ Program
