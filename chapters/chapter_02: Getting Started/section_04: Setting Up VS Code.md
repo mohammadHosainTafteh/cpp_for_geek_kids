@@ -34,51 +34,53 @@ Before diving into VS Code, it's helpful to understand the landscape of code edi
 
 VS Code is the recommended editor for this book because it balances simplicity with power. Here's why it's a great choice:
 
-Free and open-source
+* Free and open-source
 
-Works on Windows, macOS, and Linux
+* Works on Windows, macOS, and Linux
 
-Rich extension ecosystem for every language and tool
+* Rich extension ecosystem for every language and tool
 
-Built-in terminal, Git integration, and debugging tools
+* Built-in terminal, Git integration, and debugging tools
 
-Easy to customize with themes and settings
+* Easy to customize with themes and settings
 
-Seamlessly integrates with GitHub Codespaces — a cloud-based version of VS Code you can run entirely in your browser
+* Seamlessly integrates with GitHub Codespaces — a cloud-based version of VS Code you can run entirely in your browser
 
-2.4.3 Installing VS Code on Ubuntu
+### 2.4.3 Installing VS Code on Ubuntu
 
 There are several ways to install VS Code on Ubuntu. Here's the easiest method:
 
-Option 1: Ubuntu Software Center
+#### Option 1: Ubuntu Software Center
 
-Search for "Visual Studio Code" and click install.
+* Search for "Visual Studio Code" and click install.
 
-Option 2: Terminal (Recommended)
+#### Option 2: Terminal (Recommended)
 
-sudo snap install code --classic
+  ```
+  sudo snap install code --classic
+  ```
 
-Option 3: Download from Official Website
+#### Option 3: Download from Official Website
 
-Visit https://code.visualstudio.com and download the .deb package. Once downloaded, you can install it using the terminal:
+* Visit [code.visualstudio.com](https://code.visualstudio.com) and download the `.deb` package. Once downloaded, you can install it using the terminal:
+  ```
+  sudo apt install ./code_*.deb
+  ```
+* Make sure you're in the directory where the `.deb` file was saved. You can use `cd ~/Downloads` if you downloaded it to your default folder. This command will install VS Code and handle dependencies automatically.
 
-sudo apt install ./code_*.deb
+**Geek Tip**: Use `code --version` to verify installation and check which version of VS Code is installed — this works whether you installed it via Snap, apt, or a .deb package.
 
-Make sure you're in the directory where the .deb file was saved. You can use cd ~/Downloads if you downloaded it to your default folder. This command will install VS Code and handle dependencies automatically.
-
-Geek Tip: Use code --version to verify installation and check which version of VS Code is installed — this works whether you installed it via Snap, apt, or a .deb package.
-
-2.4.4 Setting Up C++ Extensions
+### 2.4.4 Setting Up C++ Extensions
 
 To turn VS Code into a C++ development powerhouse, install the right extensions and configure build tasks.
 
-Install C/C++ Extension Pack by Microsoft
+* **Install C/C++ Extension Pack** by Microsoft
 
 
 
 
 
-2.4.5 VS Code Tour and Shortcuts
+### 2.4.5 VS Code Tour and Shortcuts
 
 Now that VS Code is installed and ready, let’s take a quick tour of its interface and learn some handy shortcuts to boost your coding speed
 
