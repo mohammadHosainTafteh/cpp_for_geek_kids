@@ -114,34 +114,40 @@ Here’s how to use gedit:
 
 **Weekly Challenge**: Once a week, write a simple C++ program using only a basic text editor like Nano or gedit — no IDE features. This will help you see how well you’ve really learned the syntax and structure of the language. It’s like practicing with training wheels off — and it makes you stronger!
 
+### 2.5.4: Try It in VS Code
 
+VS Code is a powerful editor with lots of features and a friendly interface that makes coding easier for beginners and pros alike. Here's how to use it effectively:
+1. Open VS Code and add a folder to your workspace:
+    * Go to **File > Open Folder** and select the folder where you want to keep your code (e.g., hello_world). This helps VS Code organize your files and show them in the Explorer panel.
+    * You can also drag and drop a folder into VS Code to open it.
+2. Create a new file named `hello.cpp` inside that folder. You can name it anything you like — `main.cpp`, `test3.cpp`, `second_code.cpp`, or even `my_project_003.cpp`. Just make sure it ends with `.cpp`.  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-💻 Step 4: Try It in VS Code
-
-VS Code is a powerful editor with lots of features:
-
-Open VS Code and create a new file named hello.cpp.
-
-Paste your code.
-
+3. Paste your code into the file.
+   ```
+   #include <iostream>
+   int main() {
+       std::cout << "Hello, Geek! (from Vs-code)" << std::endl;
+   return 0;
+   }
+   ```
+4. Open the terminal inside VS Code by pressing `Ctrl + `` (the backtick key). This opens a terminal at the bottom of the window, already set to your folder's location.
 Open the terminal inside VS Code (`Ctrl + ``).
+5. Compile and run your code using the same commands as before:
+   ```
+   g++ -o hello_app hello.cpp
+   ./hello_app
+   ```
+   
+6. Explore the interface:
+    * Use the Explorer panel to browse files.
+    * Try the Extensions tab to install helpful tools like C++ IntelliSense or themes.
+    * To close a folder, go to **File > Close Folder** or simply open a different one.
 
-Compile and run your code.
 
-Explore the interface: file explorer, terminal, extensions.
+
+
+
+
 
 
 
